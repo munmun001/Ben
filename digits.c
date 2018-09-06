@@ -3,7 +3,7 @@
 //46288 --> 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
 
 int digPow(int n, int p) {
-  if (n>0&&p>0&&n<2147483647){
+  if (n>0&&p>0){
   int j=n;
   int i=1, c1 = 0,c2=0;
   for (int m = 10; m <= j; m*=10)i++;
@@ -23,5 +23,4 @@ int digPow(int n, int p) {
   if (i<=0)i = -1;
   return i;
 }else return -1;
-
 }
